@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">\
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="cart.js"></script>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cakes.html">Cakes</a></li>
+            <li><a href="pastries.html">Pastries</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Search..." name="q">
+                    <button type="submit">Search</button>
+                </form>
+            </li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1>Your Shopping Cart</h1>
+    </header>
+    
+    <main>
+        <section id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </section>
+        <p>Total: Rs. <span id="total-price">0</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </main>
+    
+    <script src="cart.js"></script>
+
+    <footer>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: bake'n@bakery.com</p>
+            <p>Phone: +91 9164940145</p>
+            <p>Address: M T road Puttur</p>
+        </section>
+        <section id="social-media">
+            <h2>Follow Us</h2>
+            <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-f"></a>
+            <a href="https://www.twitter.com" target="_blank" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram"></a>
+            <a href="https://www.linkedin.com" target="_blank" class="fab fa-linkedin-in"></a>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Our bakery has been serving delicious cakes and pastries since 1990. We pride ourselves on using the finest ingredients to create mouth-watering treats for all occasions.</p>
+        </section>
+    </footer>
+</body>
+</html>
